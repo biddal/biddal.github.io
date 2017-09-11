@@ -1,0 +1,216 @@
+*
+{
+  padding:0;
+  margin:0;
+}
+/******************************************************************************/
+/*                                body                                        */
+/******************************************************************************/
+body
+{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #00979D;
+  margin: auto;
+}
+
+/******************************************************************************/
+/*                                header                                      */
+/******************************************************************************/
+header
+{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: white;
+  width: 100%;
+}
+header div:nth-child(1)
+{
+  display:flex;
+  flex-flow: row nowrap;
+  width:65%;
+  height:100%;
+  margin: auto;
+}
+pre
+{
+  margin: auto;
+}
+code
+{
+	font-size: 150% !important;
+}
+header div:nth-child(2)
+{
+  width:15%;
+  height:90%;
+  margin: auto;
+}
+
+/******************************************************************************/
+/*                                nav                                         */
+/******************************************************************************/
+.sticky-wrapper
+{
+		width:100%;
+}
+#nav
+{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  background-color: white;
+  width:100%;
+  height:65px;
+}
+#navigation
+{
+  width:90%;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  font-size: 22px;
+  font-family: 'Open Sans', Arial, Verdana, serif;
+}
+#navigation a
+{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width:25%;
+	height: 100%;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border-right: 2px solid #FFF;
+}
+#navigation a:first-child
+{
+  border-left: 2px solid #FFF;
+}
+#navigation a:hover
+{
+	background: url(images/slicenoir.jpg) repeat-x;
+    text-decoration: none;
+    color: grey;
+}
+#navigation li
+{
+	list-style-type: none;
+}
+
+/******************************************************************************/
+/*                                main                                        */
+/******************************************************************************/
+main
+{
+	width:100%;
+}
+#competences
+{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-around;
+	align-items:center;
+	margin-top:5%;
+  padding-top:70px;
+}
+#competences div
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 20%;
+	margin-top: 2em;
+	margin-bottom:2em;
+	height: 150px;
+}
+#competences i
+{
+	font-size: 150px;
+	text-shadow: 0px 0px 25px black;
+}
+#experiences
+{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-around;
+	align-items:center;
+	margin-top:5%;
+  padding-top:70px
+}
+.divprin
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 30%;
+	margin-top: 2em;
+	height: 150px;
+	background:rgba(255,255,255, 0.5);
+}
+.mep
+{
+	width: 90%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	text-shadow: 0px 0px 25px black;
+}
+.mep h1
+{
+	width: 100%;
+	text-align:center;
+}
+.mep p
+{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items:center;
+	width: 100%;
+}
+.mep p img
+{
+	width:15%;
+}
+#formations
+{
+	width:90%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-around;
+	align-items:center;
+	margin: auto;
+	margin-top:5%;
+  padding-top:70px
+}
+#formations div
+{
+	width:40%;
+	height: 200px;
+	margin-top:3%;
+	background:rgba(255,255,255, 0.5);
+}
+.hidden
+{
+	opacity:0;
+}
+/******************************************************************************/
+/*                              footer                                        */
+/******************************************************************************/
+footer
+{
+  background-color: white;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+}

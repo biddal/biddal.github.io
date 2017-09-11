@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Biddau Jean-christophe</title>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<link rel="stylesheet" href="solarized-dark.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+  </head>
+
+  <!--------------------------------------------------------------------------->
+  <!--Début du Body------------------------------------------------------------>
+  <!--------------------------------------------------------------------------->
+  <body>
+    <!------------------------------------------------------------------------->
+	<!--Début Header----------------------------------------------------------->
+	<!------------------------------------------------------------------------->
+    <header>
+        <div>
+	<pre><code class="javascript">var me
+{
+	nom: Biddau,
+	prenom: Jean-Christophe,
+	adresse: 1 rue des Jardins,
+	CP: 29410,
+	ville: Pleyber-Christ,
+	age: 32ans;
+}
+	</code></pre>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <!------------------------------------------------------------------------->
+	<!--Fin du Header---------------------------------------------------------->
+	<!------------------------------------------------------------------------->
+
+		<!------------------------------------------------------------------------->
+		<!--Début du Nav----------------------------------------------------------->
+		<!------------------------------------------------------------------------->
+		  <div id="nav">
+			  <ul id="navigation">
+				<a href="#competences"><li>Compétences</li></a>
+				<a href="#experiences"><li>Expériences</li></a>
+				<a href="#formations"><li>Parcours de formation</li></a>
+				<a href="#contact"><li>Contacts</li></a>
+			  </ul>
+		  </div>
+		<!------------------------------------------------------------------------->
+		<!--Fin du Nav------------------------------------------------------------->
+		<!------------------------------------------------------------------------->
+	<main>
+		<div id="competences">
+			<div>
+				<i class="devicon-html5-plain-wordmark colored"></i>
+			</div>
+			<div>
+				<i class="devicon-css3-plain-wordmark colored"></i>
+			</div>
+			<div>
+				<i class="devicon-javascript-plain colored"></i>
+			</div>
+			<div>
+				<i class="devicon-java-plain-wordmark colored"></i>
+			</div>
+			<div>
+				<i class="devicon-symfony-original-wordmark colored"></i>
+			</div>
+			<div>
+				<i class="devicon-php-plain colored"></i>
+			</div>
+			<div>
+				<i class="devicon-mysql-plain-wordmark"></i>
+			</div>
+			<div>
+				<i class="devicon-github-plain-wordmark colored"></i>
+			</div>
+			<div>
+				<i class="devicon-atom-original-wordmark"></i>
+			</div>
+		</div>
+		<div id="experiences">
+			<!-- <div> -->
+				<!-- <h1>Employé de libre service</h1> -->
+				<!-- 2017-2018	Centre AFPA, Morlaix (29) -->
+			<!-- </div> -->
+			<div class="divprin">
+				<div class="mep">
+					<h1>Employé de libre service</h1>
+					<p><img src="images/logo-u.png">2016-2017	Super-U, Pleyber-Christ (29)</p>
+				</div>
+			</div>
+			<div class="divprin">
+				<div class="mep">
+					<h1>Technicien Informatique SIC IDA</h1>
+					<p><img src="images/armee.png">2009-2014	Armée de terre, Haguenau (67)</p>
+				</div>
+			</div>
+			<div class="divprin">
+				<div class="mep">
+					<h1>Technicien Informatique</h1>
+					<p><img src="images/samara.png">2007-2008	Samara Informatique, Amiens (80)</p>
+				</div>
+			</div>
+			<div class="divprin">
+				<div class="mep">
+					<h1>Agent manutentionnaire</h1>
+					<p><img src="images/mahle.png">2003-2004	MalheFilterSystem, Seboncourt (02)</p>
+				</div>
+			</div>
+		</div>
+		<div id="formations">
+			<div class="mep hidden" id="forma0">
+				<h1>Formation de niveau 3 Développeur logiciel</h1>
+				<p><img src="images/afpa.png">2017 AFPA Morlaix (29)</p>
+			</div>
+			<div class="mep hidden" id="forma1">
+				<h1>Niveau NBA Informatique</h1>
+				<p><img src="images/rise.png">2008 Rise Amiens (80)</p>
+			</div>
+			<div class="mep hidden" id="forma2">
+				<h1>BTS Informatique de Gestion option Administrateur de Réseaux</h1>
+				<p><img src="images/saintremi.png">2007 Saint-Rémi Amiens (80)</p>
+			</div>
+			<div class="mep hidden" id="forma3">
+				<h1>BAC STT spécialité Comptabilité Gestion</h1>
+				<p><img src="images/saintjean.png">2004 Saint-Jean & La-Croix (02)</p>
+			</div>
+		</div>
+		<div id="contact">
+
+		</div>
+		<footer>
+
+		</footer>
+	</main>
+	<script src="js/jquery.sticky.js"></script>
+	<script>
+	  $(document).ready(function(){
+		var j = 500;
+		var i = 0;
+		$("#nav").sticky({topSpacing:0});
+		$(window).scroll(function() {
+			var hT = $('footer').offset().top,
+			hH = $('footer').outerHeight(),
+			wH = $(window).height(),
+			wS = $(this).scrollTop()
+			if (wS > (hT+hH-wH)){
+				$("#forma0").animate({
+					opacity: 1
+				}, j,  callback);
+			}
+		});
+		function callback() {
+			if (i < 4) {
+				i++;
+        j-=100;
+				$("#forma" + i).animate({
+					opacity: 1
+				}, j,  callback);
+			}
+		}
+	});
+	</script>
+  </body>
+  <!--------------------------------------------------------------------------->
+  <!--Fin du Body-------------------------------------------------------------->
+  <!--------------------------------------------------------------------------->
+</html>
