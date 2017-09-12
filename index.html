@@ -166,8 +166,8 @@
     var i = 0;
 		$("#nav").sticky({topSpacing:0});
 		$(window).scroll(function() {
-			var hT = $('footer').offset().top,
-			hH = $('footer').outerHeight(),
+			var hT = $('#contact').offset().top,
+			hH = $('#contact').outerHeight(),
 			wH = $(window).height(),
 			wS = $(this).scrollTop()
 			if (wS > (hT+hH-wH)){
