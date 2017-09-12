@@ -136,6 +136,10 @@ main
 	font-size: 150px;
 	text-shadow: 0px 0px 25px black;
 }
+#competences i img
+{
+  width:200px;
+}
 #experiences
 {
 	width:100%;
@@ -200,6 +204,39 @@ main
 .hidden
 {
 	opacity:0;
+}
+#contact
+{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-around;
+	align-items:center;
+  padding-top:70px;
+}
+#contact div
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+  align-items:center;
+	width: 20%;
+	height: 100px;
+  background:rgba(255,255,255, 0.5);
+  margin:auto;
+}
+#contact i
+{
+  display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+  align-items:center;
+	font-size: 75px;
+	text-shadow: 0px 0px 25px black;
+}
+#contact i img
+{
+  height:75px;
 }
 /******************************************************************************/
 /*                              footer                                        */
