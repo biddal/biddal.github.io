@@ -118,19 +118,19 @@
 			</div>
 		</div>
 		<div id="formations">
-			<div class="mep hidden" id="forma0">
+			<div class="mep" >
 				<h1>Formation de niveau 3 Développeur logiciel</h1>
 				<p><img src="images/afpa.png">2017 AFPA Morlaix (29)</p>
 			</div>
-			<div class="mep hidden" id="forma1">
+			<div class="mep">
 				<h1>Niveau NBA Informatique</h1>
 				<p><img src="images/rise.png">2008 Rise Amiens (80)</p>
 			</div>
-			<div class="mep hidden" id="forma2">
+			<div class="mep">
 				<h1>BTS Informatique de Gestion option Administrateur de Réseaux</h1>
 				<p><img src="images/saintremi.png">2007 Saint-Rémi Amiens (80)</p>
 			</div>
-			<div class="mep hidden" id="forma3">
+			<div class="mep">
 				<h1>BAC STT spécialité Comptabilité Gestion</h1>
 				<p><img src="images/saintjean.png">2004 Saint-Jean & La-Croix (02)</p>
 			</div>
@@ -147,28 +147,7 @@
 	  $(document).ready(function(){
 		var j = 500;
 		var i = 0;
-		$("#nav").sticky({topSpacing:0});
-		$(window).scroll(function() {
-			var hT = $('footer').offset().top,
-			hH = $('footer').outerHeight(),
-			wH = $(window).height(),
-			wS = $(this).scrollTop()
-			if (wS > (hT+hH-wH)){
-				$("#forma0").animate({
-					opacity: 1
-				}, j,  callback);
-			}
-		});
-		function callback() {
-			if (i < 4) {
-				i++;
-        j-=100;
-				$("#forma" + i).animate({
-					opacity: 1
-				}, j,  callback);
-			}
-		}
-	});
+		$("#nav").sticky({topSpacing:0});	});
 	</script>
   </body>
   <!--------------------------------------------------------------------------->
