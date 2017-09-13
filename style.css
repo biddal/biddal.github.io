@@ -40,7 +40,7 @@ pre
 }
 code
 {
-	font-size: 150% !important;
+	font-size: 2em !important;
 }
 header div:nth-child(2)
 {
@@ -149,6 +149,7 @@ main
 	align-items:center;
 	margin-top:5%;
   padding-top:70px;
+  padding-bottom: 70px;
 }
 .divprin
 {
@@ -194,10 +195,11 @@ main
 	align-items:center;
 	margin: auto;
 	margin-top:5%;
+  padding-bottom: 70px;
 }
 #formations div
 {
-	width:40%;
+	width:90%;
 	height: 200px;
 	margin-top:3em;
 	background:rgba(255,255,255, 0.5);
@@ -245,8 +247,202 @@ main
 footer
 {
   background-color: white;
-  bottom: 0;
+  bottom: 0;150%
   width: 100%;
   height: 50px;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  #competences div
+  {
+  	width: 25%;
+  	height: 150px;
+  }
+  #competences i
+  {
+  	font-size: 100px;
+  }#competences div
+  {
+  	width: 25%;
+  	height: 100px;
+  }
+  #competences i
+  {
+  	font-size: 75px;
+  }
+  #competences i img
+  {
+    width:100px;
+  }
+  #competences i img
+  {
+    width:150px;
+  }
+  .mep h1
+  {
+    font-size: 1.3em;
+  }
+  .mep p
+  {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  #navigation
+  {
+    width:100%;
+    font-size: 14px;
+  }
+  #navigation a
+  {
+  	width:25%;
+  }
+  #competences div
+  {
+  	width: 25%;
+  	height: 100px;
+  }
+  #competences i
+  {
+  	font-size: 75px;
+  }    margin:auto;
+  #competences i img
+  {
+    width:100px;
+  }
+  .divprin
+  {
+  	width: 40%;
+  }
+  .mep h1
+  {
+    font-size: 1.2em;
+  }
+  .mep p
+  {
+    font-size: 0.9em;
+  }
+  .mep p img
+  {
+    width:70px;
+  }
+  #formations div
+  {
+  	height: 100px;
+  }
+  #contact div
+  {
+    height:50px;
+  }
+  #contact i
+  {
+  	font-size: 40px;
+  }
+  #contact i img
+  {
+    height:40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  code
+  {
+  	font-size: 1em !important;
+  }
+  #nav
+  {
+    flex-flow: row nowrap;
+    width:100%;
+    height:6em;
+  }
+  #navigation
+  {
+    flex-flow: column nowrap;
+    width:100%;
+  }
+  #navigation a
+  {
+  	width:100%;
+  }
+
+  #competences div
+  {
+  	display: flex;
+  	flex-flow: column nowrap;
+    align-items: center;
+    width:40%;
+  	height: 100%;
+  	height: 100px;
+  }
+  #competences i
+  {
+  	font-size: 100px;
+  }
+  #competences i img
+  {
+    width:75px;
+  }
+  #experiences
+  {
+    border-top: 2px solid white;
+  }
+  .divprin
+  {
+  	flex-flow: column wrap;
+  	width: 90%;
+    height: 100px;
+  }
+  .mep
+  {
+  	flex-flow: column nowrap;
+    justify-content: space-around;
+    margin:auto;
+    width: 100%;
+    height: 100%;
+  }
+  .mep h1
+  {
+  	width: 100%;
+    font-size: 1em;
+  }
+  .mep p
+  {
+  	display: flex;
+  	flex-flow: row nowrap;
+  	justify-content: space-around;
+  	width: 100%;
+    font-size: 0.7em;
+  }
+  .mep p img
+  {
+  	width:15%;
+  }
+  #formations
+  {
+    width: 100%;
+    border-top: 2px solid white;
+  }
+  #formations div
+  {
+  	width:100%;
+  	height: 100px;
+  }
+  #contact
+  {
+    width: 100%;
+    border-top: 2px solid white;
+  }
+  #contact div
+  {
+    height:40px;
+  }
+  #contact i
+  {
+  	font-size: 30px;
+  }
+  #contact i img
+  {
+    height:30px;
+  }
 }
